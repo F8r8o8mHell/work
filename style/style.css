@@ -1,0 +1,142 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+
+}
+body{
+    background-image: url(../image/Rectangle\ 1.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+/* <----header----> */
+ .active {
+    border-radius: 0px 35px;
+    background-color: #79b331;
+    color: white;
+  }
+
+header {
+    padding: 50px;
+    
+  }
+  
+  nav {
+    width: 594px;
+    margin-left: 636px;
+  }
+  
+  header li,
+  header h1 {
+    background-color: #c4c4c4;
+    border-radius: 0px 35px;
+    text-align: center;
+   
+  }
+  
+  header a {
+    position: relative;
+    
+    padding: 23px 20px;
+    font-weight: 400;
+    font-size: 18px;
+    color: #000000;
+    display: block;
+    transition: width 2s;
+  }
+  ul {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+ 
+  
+  header li:hover,
+  header h1:hover {
+    background-color: #79b331;
+    box-shadow: 0 0 10px #79b331;
+  }
+  
+  header li a:hover,
+  header h1 a:hover {
+    display: block;
+    color: white;
+  }
+
+
+
+
+/* <------main------> */
+
+
+
+.time {
+    margin-left: 806px;
+    margin-top: 94px;
+    
+    padding: 36px 40px;
+    width: 420px;
+    position: relative;
+    text-align: center;
+  }
+  
+  .time h2 {
+    font-weight: 400;
+    font-size: 18px;
+  }
+  
+  .time p {
+    font-weight: 400;
+    font-size: 36px;
+  }
+  
+  .ball {
+    background-color: #79b331;
+    border-radius: 50%;
+    height: 32px;
+    width: 32px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: moveball 3s infinite;
+  }
+  
+  .xecont{
+    width: 1060px;
+    height: 500px;background-color: aqua;
+    margin: 126px 0 0 400px;
+
+  }
+  .xe{
+  width: 1px;
+  height: 430px;
+  margin: 0 auto;
+  background-color: #000000;
+  
+  }
+  
+  @keyframes moveball {
+    0% {
+      top: 0;
+      left: 0;
+    }
+    25% {
+      top: 0;
+      left: 388px;
+    }
+    50% {
+      top: 116px;
+      left: 388px;
+    }
+    75% {
+      left: 0;
+      top: 116px;
+    }
+    100% {
+      top: 0;
+      left: 0;
+    }
+  }
